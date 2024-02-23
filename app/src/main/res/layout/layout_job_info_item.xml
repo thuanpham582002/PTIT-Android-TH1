@@ -7,14 +7,14 @@
     android:paddingVertical="8dp">
 
     <ImageView
-        android:id="@+id/ivJobInfoItem"
+        android:id="@+id/ivGenderAvatar"
         android:layout_width="24dp"
         android:layout_height="24dp"
         android:importantForAccessibility="no"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:src="@tools:sample/avatars" />
+        tools:src="@tools:sample/avatars" />
 
     <TextView
         android:id="@+id/tvJobTitle"
@@ -23,9 +23,9 @@
         android:layout_marginStart="8dp"
         android:textColor="@color/black"
         android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="@id/ivJobInfoItem"
-        app:layout_constraintStart_toEndOf="@id/ivJobInfoItem"
-        app:layout_constraintTop_toTopOf="@id/ivJobInfoItem"
+        app:layout_constraintBottom_toBottomOf="@id/ivGenderAvatar"
+        app:layout_constraintStart_toEndOf="@id/ivGenderAvatar"
+        app:layout_constraintTop_toTopOf="@id/ivGenderAvatar"
         tools:text="Job Title" />
 
     <TextView
@@ -40,7 +40,7 @@
         tools:ignore="HardcodedText" />
 
     <TextView
-        android:id="@+id/tvJobTime"
+        android:id="@+id/tvJobDate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/black"
